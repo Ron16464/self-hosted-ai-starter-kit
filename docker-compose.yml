@@ -106,9 +106,6 @@ services:
     volumes:
       - qdrant_storage:/qdrant/storage
 
-  ollama-cpu:
-    profiles: ["cpu"]
-    <<: *service-ollama
 
   ollama-gpu:
     profiles: ["gpu-nvidia"]
